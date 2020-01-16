@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "noUnusedLocals": true,
+    "rootDirs": ["./src"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noUnusedParameters": true,
+    "pretty": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "jsx": "react"
+  },
+  "include": ["src/**/*", "__tests__/**/*.ts"],
+  "exclude": ["src/**/*.gen.tsx"]
+}

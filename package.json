@@ -1,0 +1,50 @@
+{
+  "name": "wonka-dom",
+  "version": "1.0.0",
+  "description": "Tools for working with DOM events and Wonka FRP",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bkonkle/wonka-dom.git"
+  },
+  "author": "Brandon Konkle <brandon@konkle.us> (http://konkle.us)",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "build.all": "yarn build && yarn bundle",
+    "build.sync": "mkdir -p dist && cp -r index.html build resources dist/",
+    "build.publish": "gh-pages -d dist",
+    "build.dist": "yarn build.all && yarn build.sync && yarn build.publish",
+    "bundle": "webpack",
+    "watch": "bsb -make-world -w",
+    "test": "NODE_ENV=test jest",
+    "test.watch": "NODE_ENV=test jest --watch",
+    "prepare": "yarn build.all"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "@babel/preset-typescript": "^7.8.0",
+    "@types/jest": "^24.0.25",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "bs-platform": "^7.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "gentype": "^3.9.1",
+    "gh-pages": "^2.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "waait": "^1.0.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "bs-webapi": "^0.15.6",
+    "wonka": "^4.0.6"
+  }
+}
