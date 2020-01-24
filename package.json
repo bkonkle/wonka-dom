@@ -8,7 +8,6 @@
   },
   "author": "Brandon Konkle <brandon@konkle.us> (http://konkle.us)",
   "license": "MIT",
-  "private": true,
   "main": "src/index.js",
   "scripts": {
     "clean": "bsb -clean-world",
