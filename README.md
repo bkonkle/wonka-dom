@@ -1,24 +1,27 @@
-# Wonka DOM
+# WonkaDOM
 
 Tools for working with DOM events using the [Wonka](https://github.com/kitten/wonka) FRP library.
 
-## Dependencies
+## Peer Dependencies
+
+This library depends on the Wonka FRP library, and you'll want to install it directly and use it along with WonkaDOM.
 
 - [Wonka](https://github.com/kitten/wonka) v4
-- [bs-webpapi](https://github.com/reasonml-community/bs-webapi-incubator) v0.16
 
 ## Usage
+
+### ReasonML
 
 Use Yarn or npm to install:
 
 ```sh
-yarn add wonka wonka-dom bs-webapi
+yarn add wonka wonka-dom
 ```
 
-And add to your `bsconfig.json` along with `wonka` and `bs-webapi`:
+And add to your `bsconfig.json` along with `wonka`:
 
 ```json
-  "bs-dependencies": ["bs-webapi", "wonka", "wonka-dom"],
+  "bs-dependencies": ["wonka", "wonka-dom"],
 ```
 
 Then `open` the `WonkaDOM` module along with `Wonka`:
@@ -29,6 +32,28 @@ open WonkaDOM;
 
 fromAnimationFrame
   |> subscribe((. time) => Js.log(time));
+```
+
+### TypeScript
+
+Use Yarn or npm to install:
+
+```sh
+yarn add wonka wonka-dom
+```
+
+Then, import functions from `wonka-dom`:
+
+```ts
+import {pipe, subscribe} from 'wonka'
+import {fromAnimationFrame} from 'wonka-dom'
+
+pipe(
+  fromAnimationFrame,
+  subscribe(time => {
+    console.log(time)
+  })
+)
 ```
 
 ## API

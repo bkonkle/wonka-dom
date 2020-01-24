@@ -19,11 +19,18 @@
     "test.watch": "NODE_ENV=test jest --watch",
     "prepare": "yarn build"
   },
+  "dependencies": {
+    "bs-webapi": "^0.15.6"
+  },
+  "peerDependencies": {
+    "wonka": ">= 4.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@babel/preset-env": "^7.8.0",
     "@babel/preset-typescript": "^7.8.0",
     "@types/jest": "^24.0.25",
+    "@types/node": "^13.5.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -35,12 +42,10 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
+    "typescript": "^3.7.5",
     "waait": "^1.0.5",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
-  "dependencies": {
-    "bs-webapi": "^0.15.6",
+    "webpack-cli": "^3.3.10",
     "wonka": "^4.0.6"
   }
 }
