@@ -1,5 +1,5 @@
 {
-  "name": "@bkonkle/wonka-mario",
+  "name": "wonka-dom",
   "sources": [
     {
       "dir": "src",
@@ -16,7 +16,7 @@
   "warnings": {
     "error": "+5"
   },
-  "namespace": true,
+  "namespace": false,
   "refmt": 3,
   "gentypeconfig": {
     "language": "typescript",

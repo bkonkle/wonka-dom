@@ -13,15 +13,11 @@
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
-    "build.all": "yarn build && yarn bundle",
-    "build.sync": "mkdir -p dist && cp -r index.html build resources dist/",
-    "build.publish": "gh-pages -d dist",
-    "build.dist": "yarn build.all && yarn build.sync && yarn build.publish",
     "bundle": "webpack",
     "watch": "bsb -make-world -w",
     "test": "NODE_ENV=test jest",
     "test.watch": "NODE_ENV=test jest --watch",
-    "prepare": "yarn build.all"
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
