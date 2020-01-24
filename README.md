@@ -1,3 +1,18 @@
+
+<br>
+<a href="https://npmjs.com/package/wonka-dom">
+  <img alt="NPM Version" src="https://img.shields.io/npm/v/wonka-dom.svg" />
+</a>
+<a href="https://npmjs.com/package/wonka-dom">
+  <img alt="License" src="https://img.shields.io/npm/l/wonka-dom.svg" />
+</a>
+<!-- <a href="https://coveralls.io/github/bkonkle/wonka-dom?branch=master">
+  <img src="https://coveralls.io/repos/github/bkonkle/wonka-dom/badge.svg?branch=master" alt="Test Coverage" />
+</a> -->
+<a href="https://bundlephobia.com/result?p=wonka-dom">
+  <img alt="Minified gzip size" src="https://img.shields.io/bundlephobia/minzip/wonka-dom.svg?label=gzip%20size" />
+</a>
+
 # WonkaDOM
 
 Tools for working with DOM events using the [Wonka](https://github.com/kitten/wonka) FRP library.
