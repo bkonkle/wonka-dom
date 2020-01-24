@@ -56,6 +56,10 @@ pipe(
 )
 ```
 
+## Demo
+
+See the Mario demo [here](https://github.com/bkonkle/wonka-mario)!
+
 ## API
 
 ### Sources
@@ -154,3 +158,8 @@ fromWindowEvent("mousedown")
   |> isButton(0)
   |> subscribe((. mouseEvent) => Js.log(mouseEvent));
 ```
+
+## To-Do
+
+* [ ] Unit tests
+* [ ] More sources
